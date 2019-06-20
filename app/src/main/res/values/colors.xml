@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFC107</color>
+    <color name="colorPrimaryDark">#FFA000</color>
+    <color name="backgroundColor">#fcfcfc</color>
+    <color name="lgihtGray">#ededed</color>
+    <color name="deepPurple">#7C4dff</color>
+    <color name="yellow">#ffb300</color>
+    <color name="green">#00bfa5</color>
+    <color name="materialGray600">#757575</color>
+    <color name="AboutAppln">#ffb400</color>
+    <color name="ApplnData">#447390</color>
+
+
+
+
+
+</resources>

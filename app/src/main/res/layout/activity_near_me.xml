@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:id="@+id/TFaddress"
+            android:layout_width="186dp"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/Bsearch"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:onClick="onSearch"
+            android:text="@string/search" />
+
+        <Button
+            android:id="@+id/Btype"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:nestedScrollingEnabled="false"
+            android:onClick="changeType"
+            android:text="@string/map_type" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="421dp"
+        android:layout_height="684dp">
+
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            class="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="332dp"
+            android:layout_height="684dp"
+            tools:context=".NearMeActivity" />
+
+        <LinearLayout
+            android:layout_width="89dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/Bzoomin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onZoom"
+                android:text="@string/Bzoomin" />
+
+            <Button
+                android:id="@+id/Bzoomout"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:onClick="onZoom"
+                android:text="@string/Bzoomout" />
+
+            <Button
+                android:id="@+id/add_location_button"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:onClick="onZoom"
+                android:text="@string/adloc" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
